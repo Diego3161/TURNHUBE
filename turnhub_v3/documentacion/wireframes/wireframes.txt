@@ -1,6 +1,0 @@
-/* Mockups y prototipo navegable */
-
-LINK DEL FIGMA: https://www.figma.com/design/s9qjxm8HkFqUee7hFQDOq9/TurnHub?node-id=0-1&t=UrverpWJtdDSjkgH-1
-
-
-
