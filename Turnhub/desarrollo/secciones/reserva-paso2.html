@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tus datos — TurnHub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-turnhub sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">TurnHub</a>
+    </div>
+  </nav>
+
+  <main class="container" style="padding: 48px 16px; max-width: 620px;">
+
+    <a href="reserva-paso1.html" style="color: var(--color-text-muted); text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px; margin-bottom: 24px;">
+      ← Volver
+    </a>
+
+    <h1 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 24px;">Peluquería Marcela</h1>
+
+    <!-- Barra de progreso -->
+    <div class="progress-steps w-100 mb-4">
+      <div class="d-flex flex-column align-items-center">
+        <div class="step-dot done">✓</div>
+        <span class="step-label">Horario</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="d-flex flex-column align-items-center">
+        <div class="step-dot active">2</div>
+        <span class="step-label active">Tus datos</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="d-flex flex-column align-items-center">
+        <div class="step-dot">3</div>
+        <span class="step-label">Confirmación</span>
+      </div>
+    </div>
+
+    <!-- Resumen -->
+    <div class="resumen-box">
+      <div class="resumen-row">
+        <span class="resumen-label">Servicio</span>
+        <span class="resumen-valor" id="resumen-servicio">—</span>
+      </div>
+      <div class="resumen-row">
+        <span class="resumen-label">Fecha y hora</span>
+        <span class="resumen-valor" id="resumen-horario">—</span>
+      </div>
+      <div class="resumen-row">
+        <span class="resumen-label">Duración</span>
+        <span class="resumen-valor" id="resumen-duracion">—</span>
+      </div>
+      <div class="resumen-row">
+        <span class="resumen-label">Precio</span>
+        <span class="resumen-valor" id="resumen-precio">—</span>
+      </div>
+    </div>
+
+    <!-- Formulario -->
+    <h2 style="font-size: 1rem; font-weight: 600; margin-bottom: 20px;">Tus datos <span class="text-muted-th" style="font-weight: 400;">(no necesitás crear una cuenta)</span></h2>
+
+    <form id="form-reserva" novalidate>
+
+      <div class="mb-4">
+        <label class="label-th" for="nombre">Nombre completo <span style="color: var(--color-danger);">*</span></label>
+        <input type="text" id="nombre" class="input-th" placeholder="Ej: Juan Pérez" autocomplete="name" aria-required="true">
+        <span class="error-msg" id="error-nombre"></span>
+      </div>
+
+      <div class="mb-4">
+        <label class="label-th" for="telefono">Teléfono / WhatsApp <span style="color: var(--color-danger);">*</span></label>
+        <input type="tel" id="telefono" class="input-th" placeholder="Ej: 11 1234-5678" autocomplete="tel" aria-required="true">
+        <span class="error-msg" id="error-telefono"></span>
+        <p class="text-muted-th mt-1" style="font-size: 0.78rem;">Te mandamos la confirmación a este número.</p>
+      </div>
+
+      <div class="mb-4">
+        <label class="label-th" for="mail">Mail <span class="text-muted-th">(opcional)</span></label>
+        <input type="email" id="mail" class="input-th" placeholder="Ej: juan@mail.com" autocomplete="email">
+        <span class="error-msg" id="error-mail"></span>
+      </div>
+
+      <div class="mb-4">
+        <label class="label-th" for="comentario">Comentario <span class="text-muted-th">(opcional)</span></label>
+        <textarea id="comentario" class="input-th" rows="3" placeholder="Algo que debamos saber para tu turno..." style="resize: none;"></textarea>
+      </div>
+
+      <div class="mb-4 d-flex align-items-start gap-2">
+        <input type="checkbox" id="recordatorio" style="margin-top: 3px; accent-color: var(--color-primary);">
+        <label for="recordatorio" style="font-size: 0.88rem; color: var(--color-text-muted); cursor: pointer;">
+          Quiero recibir un recordatorio por WhatsApp 24 hs antes del turno
+        </label>
+      </div>
+
+      <div class="d-flex gap-3">
+        <a href="reserva-paso1.html" class="btn btn-ghost-th flex-grow-1" style="padding: 14px;">← Volver</a>
+        <button type="submit" class="btn btn-primary-th flex-grow-1" style="padding: 14px; font-size: 1rem;">
+          Confirmar turno →
+        </button>
+      </div>
+
+    </form>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

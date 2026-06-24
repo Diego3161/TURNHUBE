@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estética Renew — TurnHub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-turnhub sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">TurnHub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-2">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Iniciar sesión</a></li>
+          <li class="nav-item"><a class="btn btn-primary-th" href="login.html#registro">Registrar mi comercio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div style="background: linear-gradient(135deg, #1A1033 0%, #2D1F5E 100%); height: 200px; display: flex; align-items: flex-end; padding-bottom: 0;">
+    <div class="container pb-0">
+      <div class="d-flex align-items-end gap-4" style="transform: translateY(30px);">
+        <div style="width: 80px; height: 80px; background: var(--color-primary); border-radius: 16px; border: 3px solid var(--color-bg); display: flex; align-items: center; justify-content: center; font-size: 2.2rem; flex-shrink: 0;">
+          🧖
+        </div>
+        <div class="pb-2">
+          <h1 style="font-size: 1.5rem; font-weight: 700; margin: 0;">Estética Renew</h1>
+          <div class="d-flex align-items-center gap-3 flex-wrap mt-1">
+            <span class="stars" style="font-size: 0.9rem;">★★★★★</span>
+            <span class="text-muted-th" style="font-size: 0.85rem;">4.8 (143 reseñas)</span>
+            <span class="text-muted-th" style="font-size: 0.85rem;">📍 San Telmo, CABA</span>
+            <span style="font-size: 0.85rem; color: var(--color-success);">● Abierto hoy hasta las 20:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="container" style="padding-top: 60px; padding-bottom: 60px;">
+    <div class="row g-4">
+
+      <div class="col-lg-8">
+        <p class="text-muted-th" style="font-size: 0.95rem; margin-bottom: 28px;">
+          Centro de estética integral con tratamientos faciales, corporales y depilación. Utilizamos productos dermocosmético de alta gama. Atención en un ambiente tranquilo y profesional.
+        </p>
+
+        <h2 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 20px;">Servicios disponibles</h2>
+
+        <div class="servicio-card">
+          <div>
+            <div class="servicio-nombre">Depilación con cera</div>
+            <div class="servicio-meta">30 min · Zona a elección</div>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <div class="servicio-precio">$4.000</div>
+            <a href="reserva-paso1.html" class="btn btn-primary-th" onclick="guardarServicio('Depilación con cera','30 min','$4.000')">Reservar</a>
+          </div>
+        </div>
+
+        <div class="servicio-card">
+          <div>
+            <div class="servicio-nombre">Limpieza facial profunda</div>
+            <div class="servicio-meta">60 min · Extracción + hidratación</div>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <div class="servicio-precio">$8.500</div>
+            <a href="reserva-paso1.html" class="btn btn-primary-th" onclick="guardarServicio('Limpieza facial profunda','60 min','$8.500')">Reservar</a>
+          </div>
+        </div>
+
+        <div class="servicio-card">
+          <div>
+            <div class="servicio-nombre">Masaje relajante</div>
+            <div class="servicio-meta">60 min · Cuerpo completo con aceites</div>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <div class="servicio-precio">$9.000</div>
+            <a href="reserva-paso1.html" class="btn btn-primary-th" onclick="guardarServicio('Masaje relajante','60 min','$9.000')">Reservar</a>
+          </div>
+        </div>
+
+        <div class="servicio-card">
+          <div>
+            <div class="servicio-nombre">Tratamiento antiage</div>
+            <div class="servicio-meta">75 min · Radiofrecuencia + hidratación</div>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <div class="servicio-precio">$14.000</div>
+            <a href="reserva-paso1.html" class="btn btn-primary-th" onclick="guardarServicio('Tratamiento antiage','75 min','$14.000')">Reservar</a>
+          </div>
+        </div>
+
+        <div class="servicio-card">
+          <div>
+            <div class="servicio-nombre">Depilación láser (sesión)</div>
+            <div class="servicio-meta">30 min · Zona chica o mediana</div>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <div class="servicio-precio">$11.000</div>
+            <a href="reserva-paso1.html" class="btn btn-primary-th" onclick="guardarServicio('Depilación láser','30 min','$11.000')">Reservar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card-th mb-4">
+          <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 16px;">Horarios de atención</h3>
+          <div class="d-flex justify-content-between py-2" style="border-bottom: 1px solid var(--color-border); font-size: 0.88rem;">
+            <span class="text-muted-th">Lunes a viernes</span>
+            <span>10:00 — 20:00</span>
+          </div>
+          <div class="d-flex justify-content-between py-2" style="border-bottom: 1px solid var(--color-border); font-size: 0.88rem;">
+            <span class="text-muted-th">Sábados</span>
+            <span>10:00 — 16:00</span>
+          </div>
+          <div class="d-flex justify-content-between py-2" style="font-size: 0.88rem;">
+            <span class="text-muted-th">Domingos</span>
+            <span class="text-muted-th">Cerrado</span>
+          </div>
+        </div>
+
+        <div class="card-th mb-4">
+          <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 12px;">Ubicación</h3>
+          <p class="text-muted-th" style="font-size: 0.88rem; margin: 0;">
+            📍 Defensa 876, San Telmo<br>
+            Ciudad Autónoma de Buenos Aires
+          </p>
+        </div>
+
+        <div class="card-th">
+          <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 12px;">Compartir</h3>
+          <p class="text-muted-th" style="font-size: 0.82rem; margin-bottom: 10px;">Link directo para reservar:</p>
+          <div style="background: var(--color-bg); border-radius: 8px; padding: 10px 12px; font-size: 0.78rem; color: var(--color-text-muted); word-break: break-all; margin-bottom: 10px;">
+            turnhub.com/reservar/estetica-renew
+          </div>
+          <button class="btn btn-ghost-th w-100" onclick="navigator.clipboard.writeText('https://turnhub.com/reservar/estetica-renew'); this.textContent='✓ ¡Copiado!'; setTimeout(()=>this.textContent='Copiar link',2000);">
+            Copiar link
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer-th">
+    <div class="container">
+      <div class="d-flex justify-content-between flex-wrap gap-2" style="font-size: 0.8rem;">
+        <span>© 2025 TurnHub — Grupo 14 UADE</span>
+        <span><a href="#">Términos de uso</a> · <a href="#">Privacidad</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

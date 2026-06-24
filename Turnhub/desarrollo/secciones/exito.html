@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Turno confirmado! — TurnHub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-turnhub sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">TurnHub</a>
+    </div>
+  </nav>
+
+  <main class="container text-center" style="padding: 80px 16px; max-width: 520px;">
+
+    <!-- Ícono de éxito -->
+    <div class="success-icon">✓</div>
+
+    <h1 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 8px;">¡Tu turno está confirmado!</h1>
+    <p class="text-muted-th mb-4" style="font-size: 0.95rem;">
+      Te mandamos los detalles a <strong id="exito-mail" style="color: var(--color-text);">tu WhatsApp</strong>
+    </p>
+
+    <!-- Resumen del turno -->
+    <div class="resumen-box text-start mb-4">
+      <div class="resumen-row">
+        <span class="resumen-label">Comercio</span>
+        <span class="resumen-valor">Peluquería Marcela</span>
+      </div>
+      <div class="resumen-row">
+        <span class="resumen-label">Servicio</span>
+        <span class="resumen-valor" id="exito-servicio">—</span>
+      </div>
+      <div class="resumen-row">
+        <span class="resumen-label">Fecha y hora</span>
+        <span class="resumen-valor" id="exito-fecha">—</span>
+      </div>
+      <div class="resumen-row">
+        <span class="resumen-label">Cliente</span>
+        <span class="resumen-valor" id="exito-nombre">—</span>
+      </div>
+      <div class="resumen-row">
+        <span class="resumen-label">Dirección</span>
+        <span class="resumen-valor">Av. Rivadavia 4521, Caballito</span>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column gap-3">
+      <a href="../index.html" class="btn btn-primary-th" style="padding: 14px; font-size: 1rem;">
+        Volver al inicio
+      </a>
+      <a href="#" class="btn btn-ghost-th" style="padding: 14px; color: var(--color-danger); border-color: var(--color-danger);"
+         onclick="if(confirm('¿Estás seguro de que querés cancelar el turno?')) { alert('Turno cancelado. Te enviamos un WhatsApp de confirmación.'); window.location.href='../index.html'; } return false;">
+        Cancelar este turno
+      </a>
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
