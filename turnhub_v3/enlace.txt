@@ -1,0 +1,11 @@
+Repositorio del proyecto:
+https://github.com/grupo14-uade/turnhub
+
+Sitio en vivo:
+Pendiente de deploy.
+
+Visualización local:
+1. Descargar y descomprimir el ZIP.
+2. Abrir turnhub/desarrollo/index.html en Chrome, Firefox, Safari o Edge.
+
+Nota: una ruta file:///C:/... solo funciona en la computadora donde está guardado el proyecto. Para compartirlo con el docente, se entrega el ZIP completo y, en caso de deploy, se reemplaza esta línea por el enlace público.
